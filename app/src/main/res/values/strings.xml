@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pet</string>
+
+
+      <!--欢迎页-->
+    <string name="welcome_jump">跳过</string>
+
+
+
+</resources>
