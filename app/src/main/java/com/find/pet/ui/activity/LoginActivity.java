@@ -1,20 +1,14 @@
 package com.find.pet.ui.activity;
 
-import android.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
 
 import com.find.pet.BR;
 import com.find.pet.R;
 import com.find.pet.databinding.ActivityLoginBinding;
 import com.find.pet.ui.fragment.LoginFragment;
 import com.find.pet.ui.fragment.RegisterFragment;
-import com.find.pet.vm.LoginViewModel;
-import com.flyco.tablayout.SlidingTabLayout;
 
 import java.util.ArrayList;
 import java.util.List;

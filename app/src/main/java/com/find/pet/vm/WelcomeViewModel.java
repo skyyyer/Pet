@@ -4,7 +4,9 @@ package com.find.pet.vm;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.databinding.ObservableField;
+import android.databinding.ObservableInt;
 import android.os.CountDownTimer;
+import android.view.View;
 
 import com.find.pet.ui.activity.LoginActivity;
 import com.find.pet.ui.activity.MainActivity;
@@ -23,6 +25,9 @@ import me.goldze.mvvmhabit.utils.ToastUtils;
 
 public class WelcomeViewModel extends BaseViewModel {
 
+    //布局显示
+    public ObservableInt layoutVisibility = new ObservableInt();
+
     //计时器
     private CountDownTimer count = new CountDownTimer(5 * 1000, 1000) {
         @Override
@@ -34,7 +39,9 @@ public class WelcomeViewModel extends BaseViewModel {
 
         @Override
         public void onTick(long millisUntilFinished) {
-
+            if (millisUntilFinished < 3 * 1000) {
+                layoutVisibility.set(View.VISIBLE);
+            }
         }
     };
 
@@ -45,6 +52,7 @@ public class WelcomeViewModel extends BaseViewModel {
     @Override
     public void onCreate() {
         super.onCreate();
+        layoutVisibility.set(View.GONE);
         requestNetWork();
     }
 

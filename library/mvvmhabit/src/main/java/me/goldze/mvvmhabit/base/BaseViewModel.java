@@ -73,6 +73,17 @@ public class BaseViewModel implements IBaseViewModel {
     }
 
     /**
+     * 跳转页面  共享元素
+     *
+     * @param clz    所跳转的目的Activity类
+     * @param Options
+     */
+    public void startActivityWithShare(Class<?> clz, Bundle Options) {
+        Intent intent = new Intent(context, clz);
+        context.startActivity(intent,Options);
+    }
+
+    /**
      * 跳转容器页面
      *
      * @param canonicalName 规范名 : Fragment.class.getCanonicalName()

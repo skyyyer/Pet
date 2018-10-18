@@ -22,9 +22,7 @@
             android:id="@+id/imageView6"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="32dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/view3"
             binding:srcCompat="@android:color/holo_blue_bright" />
@@ -57,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="40dp"
             android:layout_marginStart="8dp"
+            android:text="@={login.userName}"
             app:layout_constraintBottom_toTopOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
@@ -136,10 +135,8 @@
             android:id="@+id/imageView5"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toStartOf="@+id/textView"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view2"
             binding:srcCompat="@android:color/holo_blue_bright" />
 
